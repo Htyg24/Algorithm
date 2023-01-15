@@ -3,8 +3,9 @@ public class Main {
     public static void main(String[] args) {
 
         //Рекурсивно найти n-ое число Фибоначчи. Определить сложность. (fn[0] = 0 или 1) [fn(n) = (fn(n - 1) + fn(n - 2)]
+        // O(n) = 2 ^ n
 
-        System.out.println("FibRecursive = " + FibRecursive(4));
+        System.out.println("FibRecursive = " + FibRecursive(8));
 
 
         //Найти n-ое число Фибоначчи за O(n).
@@ -37,6 +38,7 @@ public class Main {
 
 
     //Рекурсивно найти n-ое число Фибоначчи. Определить сложность. (fn[0] = 0 или 1) [fn(n) = (fn(n - 1) + fn(n - 2)]
+    // O(n) = 2 ^ n
     static int FibRecursive(int n)
     {
         if (n == 0)
