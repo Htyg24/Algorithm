@@ -71,6 +71,20 @@ public class Main {
 
 
     //Найти сумму элементов главной диагонали в двумерном массиве.
+    static void findMainDiagonalSum(int[][] matrix)
+    {
+        if (matrix.length != matrix[0].length)
+            throw new RuntimeException("Wrong matrix sizes");
+        int sum = 0;
+        for (int i = 0; i < matrix.length; i++)
+        {
+            sum += matrix[i][i];
+        }
+        System.out.println("Main diagonal sum = " + sum);
+    }
+
+
+    //Найти сумму элементов побочной диагонали в двумерном массиве.
     static void findSecondDiagonalSum(int[][] matrix)
     {
         int sum = 0;
@@ -79,18 +93,6 @@ public class Main {
             sum += matrix[matrix.length - i - 1][i];
         }
         System.out.println("Second diagonal sum = " + sum);
-    }
-
-
-    //Найти сумму элементов побочной диагонали в двумерном массиве.
-    static void findMainDiagonalSum(int[][] matrix)
-    {
-        int sum = 0;
-        for (int i = 0; i < matrix.length; i++)
-        {
-            sum += matrix[i][i];
-        }
-        System.out.println("Main diagonal sum = " + sum);
     }
 
 
